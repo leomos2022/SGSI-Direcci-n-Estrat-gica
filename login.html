@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Empleados - XYZ Inc.</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Opcional: favicon -->
+</head>
+<body data-theme="light"> 
+
+<!-- ==================== HEADER ==================== -->
+<header class="main-header">
+    <nav class="navbar container">
+        <!-- Enlace a la página principal -->
+        <a href="index.html" class="navbar-brand">XYZ Inc.</a>
+        <button class="navbar-toggler" aria-label="Toggle navigation" aria-expanded="false">☰</button> 
+        <div class="navbar-menu">
+            <ul class="navbar-nav">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <!-- Enlace a esta misma página (opcional, o podría ocultarse) -->
+                <li><a href="login.html">Acceso Empleados</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-button" aria-label="Cambiar tema">
+                <span class="icon-light">☀️</span>
+                <span class="icon-dark">🌙</span>
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- ================== FIN HEADER ================== -->
+
+<main>
+    <section class="login-section section-padding">
+        <div class="container">
+            <div class="login-form-container">
+                <h2 class="section-title">Acceso Empleados</h2>
+
+                <!-- Mensaje informativo estático (no habrá error/éxito dinámico sin backend) -->
+                <!-- <p class="info-message">Introduce tus credenciales para acceder.</p> -->
+
+                <!-- action="#" significa que el formulario no irá a ninguna parte específica al enviarse -->
+                <!-- onSubmit="return false;" podría usarse para prevenir envío si se maneja solo con JS -->
+                <form action="#" method="post" class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Email Corporativo:</label>
+                        <input type="email" id="username" name="username" placeholder="ejemplo@xyz.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                    </div>
+                     <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                     <!-- Mensaje para indicar que el login es solo visual -->
+                     <p style="font-size: 0.8em; color: grey; margin-top: 15px;">Nota: Este es un formulario de demostración. El inicio de sesión no está funcional.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="main-footer">
+    <div class="container">
+        <!-- El año se actualizará con JS -->
+        <p>© <span id="current-year">2025</span> XYZ Inc. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- ================== FIN FOOTER ================== -->
+
+<!-- Enlace al JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>

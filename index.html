@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Inc. - Soluciones de RRHH</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Opcional: favicon -->
+</head>
+<body data-theme="light"> 
+
+<!-- ==================== HEADER ==================== -->
+<header class="main-header">
+    <nav class="navbar container">
+        <a href="index.html" class="navbar-brand">XYZ Inc.</a>
+        <button class="navbar-toggler" aria-label="Toggle navigation" aria-expanded="false">☰</button> 
+        <div class="navbar-menu">
+            <ul class="navbar-nav">
+                <!-- Usar #inicio para scroll en la misma página -->
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <!-- Enlace a la página de login -->
+                <li><a href="login.html">Acceso Empleados</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-button" aria-label="Cambiar tema">
+                <span class="icon-light">☀️</span>
+                <span class="icon-dark">🌙</span>
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- ================== FIN HEADER ================== -->
+
+<main>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1>Soluciones de Recursos Humanos para el Futuro</h1>
+            <p>15 años de experiencia transformando la gestión de RRHH</p>
+            <a href="#servicios" class="btn btn-primary">Conoce Más</a>
+        </div>
+    </section>
+
+
+    <section id="servicios" class="services-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Gestión de Personal</h3>
+                    <p>Sistema integral para administrar información de empleados y procesos de RRHH.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Reclutamiento Digital</h3>
+                    <p>Herramientas avanzadas para optimizar el proceso de selección y contratación.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desarrollo de Talento</h3>
+                    <p>Plataforma para gestionar el crecimiento profesional y capacitación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="nosotros" class="about-section section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Sobre XYZ Inc.</h2>
+            <p class="about-text">
+                Con sede en Nueva York, somos líderes en el desarrollo de software para la gestión de
+                recursos humanos. Durante 15 años hemos ayudado a empresas de todo el país a
+                optimizar sus procesos de RRHH con soluciones tecnológicas innovadoras y confiables.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="contact-section section-padding">
+         <div class="container text-center">
+              <h2 class="section-title">Contacto</h2>
+              <p>¿Interesado en nuestras soluciones? ¡Contáctanos!</p>
+              <a href="mailto:info@xyzinc.com" class="btn btn-secondary">Enviar Email</a>
+              <!-- Podrías añadir un formulario de contacto aquí, pero necesitaría JS para enviarlo (p.ej. usando Formspree o similar) -->
+         </div>
+    </section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="main-footer">
+    <div class="container">
+        <!-- El año se actualizará con JS -->
+        <p>© <span id="current-year">202</span> XYZ Inc. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- ================== FIN FOOTER ================== -->
+
+<!-- Enlace al JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
