@@ -1,0 +1,50 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  dockerfilePath: 'Dockerfile'  # Si usas contenedores
+
+stages:
+  - stage: Build
+    displayName: 'Build and Test'
+    jobs:
+      - job: Build
+        steps:
+          - checkout: self
+
+          # Instalar dependencias (ejemplo para Node.js)
+          - script: |
+              npm install
+              npm run build
+            displayName: 'Install dependencies and build'
+
+          # Ejecutar pruebas (ejemplo)
+          - script: npm test
+            displayName: 'Run unit tests'
+
+          # Análisis estático con SonarQube
+          - task: SonarQubePrepare@4
+            inputs:
+              SonarQube: 'SonarQube-Service'  # Configurar previamente en Azure
+              scannerMode: 'CLI'
+              configMode: 'manual'
+              cliProjectKey: 'xyz-inc-frontend'
+              cliProjectName: 'XYZ Inc Frontend'
+
+          - script: |
+              sonar-scanner
+            displayName: 'Run SonarQube Analysis'
+
+          # Escaneo de vulnerabilidades con Trivy (requiere Docker)
+          - script: |
+              docker run --rm -v $(pwd):/code aquasec/trivy fs --security-checks vuln /code
+            displayName: 'Security Scan with Trivy'
+
+          # Empaquetar artefactos
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(System.DefaultWorkingDirectory)'
+              ArtifactName: 'drop'
