@@ -32,11 +32,6 @@ La certificación tiene una **validez de 3 años**, con auditorías de seguimien
 
 ---
 
-## Esquema del Proceso de Certificación
-
-![Proceso de certificación](Screenshot%202025-07-27%20at%2012.56.51%E2%80%AFPM.png)
-
----
 
 ## Implementación de Modelos ISO/IEC 27001
 
