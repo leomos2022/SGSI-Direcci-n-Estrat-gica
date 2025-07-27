@@ -1,6 +1,6 @@
 # XYZ Inc. - Soluciones de Recursos Humanos
 
-![Logo XYZ Inc.](assets/logo.png)
+![Logo XYZ Inc.](assets/xyz-logo.png)
 
 Sistema de gestión integral de recursos humanos para empresas modernas.
 
