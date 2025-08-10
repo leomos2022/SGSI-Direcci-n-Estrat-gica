@@ -84,6 +84,82 @@ body {
     padding: 0 15px;
 }
 
+/* --- Sección de Auditoría con Imagen de Fondo --- */
+#plan-auditoria {
+    background-image: url('../assets/auditoria-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+#plan-auditoria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#plan-auditoria .container {
+    position: relative;
+    z-index: 2;
+}
+
+#plan-auditoria h2,
+#plan-auditoria h3,
+#plan-auditoria p,
+#plan-auditoria li,
+#plan-auditoria strong {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#plan-auditoria .content-block {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+#plan-auditoria .content-block:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#plan-auditoria .content-block h3 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#plan-auditoria ul,
+#plan-auditoria ol {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    border-radius: 10px;
+    border-left: 4px solid #ffd700;
+}
+
+#plan-auditoria li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+#plan-auditoria strong {
+    color: #ffd700;
+    font-weight: 600;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.75rem;
@@ -1202,6 +1278,25 @@ body[data-theme='dark'] {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
+    /* Responsive para sección de auditoría */
+    #plan-auditoria {
+        background-attachment: scroll;
+    }
+    
+    #plan-auditoria .content-block {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #plan-auditoria .content-block h3 {
+        font-size: 1.5rem;
+    }
+    
+    #plan-auditoria ul,
+    #plan-auditoria ol {
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1223,5 +1318,24 @@ body[data-theme='dark'] {
     
     .benefit-card {
         padding: 1.5rem;
+    }
+    
+    /* Responsive para sección de auditoría en móviles */
+    #plan-auditoria .content-block {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #plan-auditoria .content-block h3 {
+        font-size: 1.3rem;
+    }
+    
+    #plan-auditoria ul,
+    #plan-auditoria ol {
+        padding: 12px 15px;
+    }
+    
+    #plan-auditoria li {
+        font-size: 0.9rem;
     }
 }
