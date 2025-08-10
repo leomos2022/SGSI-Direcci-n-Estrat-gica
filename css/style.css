@@ -84,31 +84,15 @@ body {
     padding: 0 15px;
 }
 
-/* --- Sección de Auditoría con Imagen de Fondo --- */
+/* --- Sección de Auditoría --- */
 #plan-auditoria {
-    background-image: url('../assets/auditoria-fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: var(--section-bg);
     position: relative;
-    color: white;
-}
-
-#plan-auditoria::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    color: var(--text-color);
 }
 
 #plan-auditoria .container {
     position: relative;
-    z-index: 2;
 }
 
 #plan-auditoria h2,
@@ -116,38 +100,37 @@ body {
 #plan-auditoria p,
 #plan-auditoria li,
 #plan-auditoria strong {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
 }
 
 #plan-auditoria .content-block {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 30px;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 #plan-auditoria .content-block:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--card-hover-bg);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 #plan-auditoria .content-block h3 {
-    color: #ffd700;
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
 
 #plan-auditoria ul,
 #plan-auditoria ol {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--card-bg);
     padding: 20px 30px;
     border-radius: 10px;
-    border-left: 4px solid #ffd700;
+    border-left: 4px solid var(--primary-color);
 }
 
 #plan-auditoria li {
@@ -156,7 +139,7 @@ body {
 }
 
 #plan-auditoria strong {
-    color: #ffd700;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -405,24 +388,25 @@ body[data-theme='dark'] .hero-overlay {
 .hero-content h1 {
     font-size: clamp(2rem, 6vw, 3.5rem); /* Tamaño de fuente adaptable */
     margin-bottom: 1rem;
-    color: #fff;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.8); /* Sombra más intensa para mejor legibilidad */
-    font-weight: 700;
+    color: #ffffff; /* Blanco puro para máximo contraste */
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.7); /* Sombras múltiples para mejor legibilidad */
+    font-weight: 800; /* Peso de fuente más grueso */
+    letter-spacing: 0.5px; /* Espaciado entre letras para mejor legibilidad */
 }
 
 .hero-content h2 {
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     margin-bottom: 2rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-    font-weight: 500;
+    color: #ffffff; /* Blanco puro */
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.9), 1px 1px 3px rgba(0,0,0,0.7);
+    font-weight: 600;
 }
 
 .hero-content p {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.95);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    color: #ffffff; /* Blanco puro para máximo contraste */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9), 1px 1px 2px rgba(0,0,0,0.7);
     line-height: 1.8;
 }
 
