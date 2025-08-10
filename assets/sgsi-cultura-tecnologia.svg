@@ -1,1 +1,22 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#6a1b9a" />
+    </marker>
+  </defs>
+  <rect x="60" y="40" width="220" height="50" rx="10" fill="#e1bee7" stroke="#6a1b9a" stroke-width="3"/>
+  <text x="170" y="70" font-size="16" text-anchor="middle" fill="#6a1b9a">Concienciación y formación</text>
+  <rect x="60" y="120" width="220" height="50" rx="10" fill="#e1bee7" stroke="#6a1b9a" stroke-width="3"/>
+  <text x="170" y="150" font-size="16" text-anchor="middle" fill="#6a1b9a">Comunicación abierta</text>
+  <rect x="60" y="200" width="220" height="50" rx="10" fill="#e1bee7" stroke="#6a1b9a" stroke-width="3"/>
+  <text x="170" y="230" font-size="16" text-anchor="middle" fill="#6a1b9a">Comités multidisciplinarios</text>
+  <rect x="620" y="40" width="220" height="50" rx="10" fill="#b3e5fc" stroke="#0288d1" stroke-width="3"/>
+  <text x="730" y="70" font-size="16" text-anchor="middle" fill="#0288d1">Automatización de controles</text>
+  <rect x="620" y="120" width="220" height="50" rx="10" fill="#b3e5fc" stroke="#0288d1" stroke-width="3"/>
+  <text x="730" y="150" font-size="16" text-anchor="middle" fill="#0288d1">Monitorización continua</text>
+  <rect x="620" y="200" width="220" height="50" rx="10" fill="#b3e5fc" stroke="#0288d1" stroke-width="3"/>
+  <text x="730" y="230" font-size="16" text-anchor="middle" fill="#0288d1">Adaptación a regulaciones</text>
+  <polyline points="280,65 620,65" fill="none" stroke="#6a1b9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="280,145 620,145" fill="none" stroke="#6a1b9a" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="280,225 620,225" fill="none" stroke="#6a1b9a" stroke-width="2" marker-end="url(#arrow)"/>
+</svg> 

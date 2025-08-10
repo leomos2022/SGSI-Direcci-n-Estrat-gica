@@ -1,1 +1,27 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#1976d2" />
+    </marker>
+  </defs>
+  <rect x="20" y="30" width="180" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="3"/>
+  <text x="110" y="60" font-size="16" text-anchor="middle" fill="#1976d2">Alta dirección comprometida</text>
+  <rect x="220" y="30" width="180" height="50" rx="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+  <text x="310" y="60" font-size="16" text-anchor="middle" fill="#1976d2">Definición de objetivos estratégicos</text>
+  <rect x="420" y="30" width="180" height="50" rx="10" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+  <text x="510" y="60" font-size="16" text-anchor="middle" fill="#fbc02d">Integración del SGSI en la estrategia</text>
+  <rect x="620" y="30" width="180" height="50" rx="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+  <text x="710" y="60" font-size="16" text-anchor="middle" fill="#1976d2">Planificación de controles y procesos</text>
+  <rect x="220" y="120" width="180" height="50" rx="10" fill="#ffe0b2" stroke="#f57c00" stroke-width="2"/>
+  <text x="310" y="150" font-size="16" text-anchor="middle" fill="#f57c00">Implementación tecnológica y cultural</text>
+  <rect x="420" y="120" width="180" height="50" rx="10" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+  <text x="510" y="150" font-size="16" text-anchor="middle" fill="#1976d2">Monitoreo, mejora continua y reporte</text>
+  <rect x="620" y="120" width="180" height="50" rx="10" fill="#c8e6c9" stroke="#388e3c" stroke-width="3"/>
+  <text x="710" y="150" font-size="16" text-anchor="middle" fill="#388e3c">Logro de sostenibilidad y cumplimiento</text>
+  <polyline points="200,55 220,55" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="400,55 420,55" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="600,55 620,55" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="310,80 310,120" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="400,145 420,145" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline points="600,145 620,145" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)"/>
+</svg> 
