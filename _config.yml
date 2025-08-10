@@ -1,0 +1,41 @@
+# GitHub Pages Configuration
+# This file configures the Jekyll site for GitHub Pages
+
+# Site settings
+title: "Auditoría Interna SGSI - XYZ Corp"
+description: "Sistema de Gestión de Seguridad de la Información (ISO/IEC 27001)"
+author: "Leonardo Mosquera Rodríguez"
+email: "leomos2022@github.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  assets:
+    output: true
+    permalink: /assets/:path
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .github
+  - .git
+  - node_modules
+  - README.md
+  - azure-pipelines.yml
+  - xyz-inc
+  - xyz-inc.pub
+
+# Include in processing
+include:
+  - assets
+  - css
+  - js
+  - *.html
