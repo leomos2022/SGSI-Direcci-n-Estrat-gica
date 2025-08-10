@@ -130,3 +130,4 @@ Corporación Uniminuto de Dios, Bogotá, Colombia 2025
 ---
 
 > Proyecto educativo para la comprensión y aplicación de auditorías internas en Sistemas de Gestión de Seguridad de la Información según ISO/IEC 27001, con enfoque en el caso de estudio de XYZ Corp.
+
